@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>青春文艺型--日照婚纱相册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+		<link href="css/style.min.css" rel="stylesheet" />
+		<link href="css/prism.min.css" rel="stylesheet" />
+	</head>
+	<style>
+		body{background-color: #2D2D2D}
+	</style>
+	<body>
+		<audio src="music/ybwkn.m4r" autoplay="autoplay" controls="controls" loop="loop" id="audios" style="display: none;"></audio>
+		<div id="mydiv" style="height:938px;">
+			<section>
+				<ul id="gallery">				
+					<li id="fullPreview"></li>					
+					<!-- 1 -->
+					<li>
+						<a href="images/pic_1.JPG"></a>
+						<img data-original="images/pic_1.JPG" src="images/white.gif" width="240" height="150" alt="Ocean" />
+						
+						<div class="overLayer"></div>
+						<div class="infoLayer">
+							<ul>
+								<li>
+									<h2>
+										Ocean   
+									</h2>
+								</li>
+								<li>
+									<p>
+										View Picture
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="projectInfo">
+							<strong>Monday, 14th April 2093:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</div>
+					</li>					
+					<!-- 2 -->
+					<li>
+						<a href="images/pic_2.JPG"></a>
+						<img data-original="images/pic_2.JPG" src="images/white.gif" width="240" height="150" alt="Party" />
+						
+						<div class="overLayer"></div>
+						<div class="infoLayer">
+							<ul>
+								<li>
+									<h2>
+										Party   
+									</h2>
+								</li>
+								<li>
+									<p>
+										View Picture
+									</p>
+								</li>
+							</ul>
+						</div>						
+						<p class="projectInfo">
+							<strong>Monday, 14th April 2093:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</p>
+					</li>					
+					<!-- 3 -->
+					<li>
+						<a href="images/pic_3.JPG"></a>
+						<img data-original="images/pic_3.JPG" src="images/white.gif" width="240" height="150" alt="Fashion" />
+						
+						<div class="overLayer"></div>
+						<div class="infoLayer">
+							<ul>
+								<li>
+									<h2>
+										Fashion     
+									</h2>
+								</li>
+								<li>
+									<p>
+										View Picture
+									</p>
+								</li>
+							</ul>
+						</div>						
+						<p class="projectInfo">
+							<strong>Monday, 14th April 2093:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</p>
+					</li>					
+					<!-- 4 -->
+					<li>
+						<a href="images/pic_4.JPG"></a>
+						<img data-original="images/pic_4.JPG" src="images/white.gif" width="240" height="150" alt="Car" />
+						
+						<div class="overLayer"></div>
+						<div class="infoLayer">
+							<ul>
+								<li>
+									<h2>
+										Car     
+									</h2>
+								</li>
+								<li>
+									<p>
+										View Picture
+									</p>
+								</li>
+							</ul>
+						</div>						
+						<p class="projectInfo">
+							<strong>Monday, 14th April 2093:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						</p>
+					</li>	
+				</ul>
+			</section>
+		</div>
+			<script type="text/javascript">
+				window.onload = function() {
+				    //配置
+				    var config = {
+				        vx: 4,	//小球x轴速度,正为右，负为左
+				        vy: 4,	//小球y轴速度
+				        height: 2,	//小球高宽，其实为正方形，所以不宜太大
+				        width: 2,
+				        count: 200,		//点个数
+				        color: "121, 162, 185", 	//点颜色
+				        stroke: "130,255,255", 		//线条颜色
+				        dist: 6000, 	//点吸附距离
+				        e_dist: 20000, 	//鼠标吸附加速距离
+				        max_conn: 10 	//点到点最大连接数
+				    }		
+				    //调用
+				    CanvasParticle(config);
+				}
+			</script>
+			<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" src="js/canvas-particle.js"></script>
+			<script src="js/jquery.lazyload.js"></script>       
+			<script src="js/least.min.js"></script>
+			<script type="text/javascript">
+				document.addEventListener('WeixinJSBridgeReady', function() {
+					document.getElementById('audios').play()
+				})
+				document.addEventListener('touchstart', function() {
+					document.getElementById('audios').play()
+				}) 
+			</script>	
+	</body>
+</html>
+

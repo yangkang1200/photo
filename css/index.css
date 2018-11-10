@@ -1,0 +1,209 @@
+html,
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+#canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.enter_home {
+	position: absolute;
+	color: #fff;
+	background: #333;
+	width: 180px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	left: 50%;
+	top: 50%;
+	margin: 180px 0 0 -90px;
+}
+
+.enter_home:hover {
+	cursor: pointer;
+}
+
+.yyc_show {
+	box-shadow: 0 0 20px #ccc;
+	transition: all 0.6s;
+	transform: translateY(-10px);
+	background: #222 !important;
+	color: #00B1EE !important;
+}
+
+.yyc_hidden {
+	box-shadow: 0 0 0 #000;
+	transition: all 0.6s;
+	transform: translateY(0);
+	background: #333 !important;
+	color: #fff !important;
+}
+
+.enter_home p {
+	margin: 0;
+	position: relative;
+	top: -46px;
+}
+
+.enter_home_con {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.enter_home_con em {
+	position: absolute;
+	background: #00a4ff;
+}
+
+.line_cirl {
+	animation: line_yuan 0.8s linear;
+}
+
+.line_cirl1 {
+	animation: line_yuan1 0.8s linear;
+}
+
+@keyframes line_yuan {
+	0% {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+	}
+
+	30% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+	}
+
+	31% {
+		top: 0;
+		left: 100%;
+		height: 0;
+		width: 2px;
+	}
+
+	50% {
+		top: 0;
+		left: 100%;
+		height: 100%;
+		width: 2px;
+	}
+
+	51% {
+		top: 100%;
+		left: 100%;
+		width: 0;
+		height: 2px;
+	}
+
+	80% {
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+	}
+
+	81% {
+		bottom: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+	}
+
+	100% {
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 100%;
+	}
+}
+
+@keyframes line_yuan1 {
+	100% {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+	}
+
+	81% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+	}
+
+	80% {
+		top: 0;
+		left: 100%;
+		height: 0;
+		width: 2px;
+	}
+
+	51% {
+		top: 0;
+		left: 100%;
+		height: 100%;
+		width: 2px;
+	}
+
+	50% {
+		top: 100%;
+		left: 100%;
+		width: 0;
+		height: 2px;
+	}
+
+	31% {
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+	}
+
+	30% {
+		bottom: 0;
+		left: 0;
+		width: 2px;
+		height: 0;
+	}
+
+	0% {
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 100%;
+	}
+}
+
+@keyframes line_yuan2 {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.auto_play {
+	animation: line_yuan2 2s ease infinite;
+}

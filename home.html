@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页--日照婚纱相册</title>
+		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+		<link rel="stylesheet" href="css/jquery.pageScroll3d.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<audio src="music/ybwkn.m4r" autoplay="autoplay" controls="controls" loop="loop" id="audios" style="display: none;"></audio>
+		<main class="main-content">
+			<section>
+				<a href="page_1.html" style="width: 100%;height: 100%;display: block;">
+					<h1>情侣小清新</h1>
+				</a>			
+			</section>
+			<section>
+				<a href="page_2.html" style="width: 100%;height: 100%;display: block;">
+					<h1>青春文艺型</h1>
+				</a>
+			</section>
+			<section>
+				<a href="page_3.html" style="width: 100%;height: 100%;display: block;">
+					<h1>唯美小礼服</h1>
+				</a>
+			</section>
+			<section>
+				<a href="page_4.html" style="width: 100%;height: 100%;display: block;">
+					<h1>童话小短纱</h1>
+				</a>
+			</section>
+		</main>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script defer src="js/jquery.mousewheel.min.js"></script>
+	<script defer src="js/jquery.pageScroll3d.min.js"></script>
+	<script defer src="js/main.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('WeixinJSBridgeReady', function() {
+			document.getElementById('audios').play()
+		})
+		document.addEventListener('touchstart', function() {
+			document.getElementById('audios').play()
+		}) 
+	</script>
+</html>

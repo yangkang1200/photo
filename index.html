@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎页--日照婚纱相册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<audio src="music/smlt.m4r" autoplay="autoplay" controls="controls" loop="loop" id="audios" style="display: none;"></audio>
+		<div class="enter_home">
+			<a href="home.html">
+				<div class="enter_home_con">
+					<em></em>
+				</div>			
+				<p>立即观赏</p>
+			</a>
+		  </div>
+		<canvas id="canvas"></canvas>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		document.addEventListener('WeixinJSBridgeReady', function() {
+			document.getElementById('audios').play()
+		})
+		document.addEventListener('touchstart', function() {
+			document.getElementById('audios').play()
+		}) 
+	</script>
+</html>
+
